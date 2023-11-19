@@ -6,8 +6,7 @@ export default new Router({
     {
       path: '/',
       component: () => import("@/pages"),
-      // redirect: '/bigdata/one',
-      redirect: '/bigdata/four',
+      redirect: '/bigdata/dw',
       children:[
         {
           path: '/bigdata/one',
@@ -24,6 +23,10 @@ export default new Router({
         {
           path: '/bigdata/four',
             component: () => import("@/components/four")
+        },
+        {
+          path: '/bigdata/dw',
+            component: () => import("@/components/dw")
         },
       ]
     }
